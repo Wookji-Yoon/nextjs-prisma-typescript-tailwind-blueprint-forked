@@ -19,7 +19,6 @@ export default function useUser() {
     if (error || data?.ok === false) {
       router.replace("/log-in");
       setIsLoading(false);
-      return;
     }
   }, [data, error, router]);
 

@@ -61,10 +61,6 @@ export default function Home() {
     }
   }, [data]);
 
-  if (profile.isLoading) {
-    return <div>Loading...</div>;
-  }
-
   return (
     <div className="mt-10 flex flex-col space-y-5 divide-y">
       <h1 className="text-center text-xl">Hello {profile?.user?.name}!</h1>
